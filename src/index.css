@@ -208,6 +208,12 @@ button {
   .main-page {
     flex-direction: column;
   }
+  .main-search, .main-title, .main-subtitle, .radios, .main-console button {
+    margin-left:0;
+  }
+  .main-subtitle {
+    padding-left:0;
+  }
 }
 
 @media screen and (max-width:600px){ 

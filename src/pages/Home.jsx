@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext} from 'react';
 import MainPageLayout from "../components/MainPageLayout";
 import {api_get, API_BASE_MOVIES_URL, API_BASE_PEOPLE_URL} from "../misc/config";
 import ShowGrid from "../components/show/ShowGrid";
 import ActorGrid from "../components/actor/ActorGrid";
 import Title from "../components/Title.jsx";
+import {GlobalSearchState} from '../misc/config';
 
-const Home = () => {
+const Home = (props) => {
+    const global_search_state = React.useContext(GlobalSearchState);
+
     const [input, setInput] = useState("");
     const [movie_results, setMovieResults] = useState(null);
     const [search_option, setSearchOption] = useState("shows");
@@ -13,7 +16,11 @@ const Home = () => {
     
 
     useEffect( () => {
-        console.log("use effect run");
+        if (global_search_state.type) {
+            console.log("Search state found");
+            setMovieResults(global_search_state.result);
+            setInput(global_search_state.input);
+        }
         return () => {
             console.log("Exit");
         }
@@ -34,6 +41,7 @@ const Home = () => {
         let url = `${base_url_for_searching}${input}`;
         api_get(url).then((result)=>{
             setMovieResults(result);
+            props.set_last_search_term(result, input, is_shows_searching);
         });
     };
     
