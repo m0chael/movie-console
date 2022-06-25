@@ -193,6 +193,17 @@ button {
     min-height:auto;
     padding-bottom:40px;
     border:1px solid lightgray;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .show-grid, .actor-grid {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
   .main-page {
     flex-direction: column;
