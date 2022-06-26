@@ -73,7 +73,7 @@ const Show = (props) => {
                                         <h1>{state.show.name}</h1>
                                         <div className="rating"><span>&#x2605;</span> {state.show.rating.average}</div>
                                     </div>
-                                    <p>{state.show.summary.split("<p>")[1].split("</p>")[0]}</p>
+                                    <p>{state.show.summary}</p>
                                     <ul className="tags">
                                         <li key={state.show.id + "_" + state.show.language}>{state.show.language}</li>
                                         {
