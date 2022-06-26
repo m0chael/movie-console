@@ -25,7 +25,7 @@ code {
   background-color:lightgray;
   text-decoration: none;
   color:black;
-  border-radius: 10px;
+  border-radius: 30px;
   padding:7px 50px 7px 50px;
   display:inline-block;
   margin-left:20px;
@@ -54,7 +54,7 @@ code {
 }
 .show-grid img, .actor-grid img {
   border:1px solid lightgray;
-  border-radius: 1rem;
+  border-radius: 30px;
 }
 
 .show-grid h1, .show-grid p, .actor-grid h1, .actor-grid p {
@@ -77,7 +77,7 @@ code {
   margin:0;
 }
 .tags li {
-  border-radius: 10px;
+  border-radius: 30px;
   margin-right:5px;
   width:auto;
   padding:5px 10px 5px 10px;
@@ -92,7 +92,7 @@ code {
 }
 
 .image-description-container img {
-  border-radius: 20px;
+  border-radius: 30px;
   border:1px solid lightgray;
 }
 
@@ -114,8 +114,8 @@ code {
 
 .main-title {
   text-decoration: none;
-  color:black;
-  border-radius: 10px;
+  color:white;
+  border-radius: 30px;
   padding:0;
   display:inline-block;
   margin-left:20px;
@@ -138,10 +138,10 @@ code {
 }
 
 .main-console {
-  border:1px solid lightgray;
-  background-color:rgb(185, 181, 217);
+  background-color:rgb(90, 81, 158);
+  color:white;
   min-height:100vh;
-  padding-right:20px;
+  min-width:300px;
   position: fixed;
   left:0;
   top:0;
@@ -156,8 +156,7 @@ code {
 }
 
 .main-search {
-  padding:7px 90px 7px 10px;
-  margin-left:20px;
+  padding-left:20px;
   text-align: left;
 }
 
@@ -184,15 +183,34 @@ button {
   margin-top:20px;
 }
 
+.main-console button, .main-search {
+  border-radius: 30px;
+  background-color:white;
+}
+
+.main-console button, .main-search {
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
 @media screen and (max-width:1000px) {
-  .show-grid, .actor-grid, .no-results, .error-box {
+  .go-home-links {
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+  .show-grid, .actor-grid {
+    margin-left:0px;
+  }
+  .no-results, .error-box {
     margin-left:20px;
   }
   .main-console {
     position: relative;
     min-height:auto;
     padding-bottom:40px;
-    border:1px solid lightgray;
     width:100%;
     display:flex;
     align-items: center;
@@ -213,6 +231,16 @@ button {
   }
   .main-subtitle {
     padding-left:0;
+  }
+  .show-links {
+    width:100%;
+    padding:10px;
+  }
+  .show-grid img, .actor-grid img {
+    width:100%;
+  }
+  .image-description-container img {
+    width:100%;
   }
 }
 
