@@ -4,6 +4,8 @@ import Navs from "./components/Navs.jsx";
 import Home from "./pages/Home";
 import Starred from "./pages/Starred";
 import Show from "./pages/Show";
+import Actor from "./pages/Actor";
+
 import {GlobalSearchState} from './misc/config';
 
 const initial_global_search_state = {
@@ -29,6 +31,7 @@ export default function App() {
             <Route path="/" element={ <Home set_last_search_term={set_last_search_term} /> } />
             <Route path="/starred" element={ <Starred /> } />
             <Route path="/show/:id" element={ <Show /> } />
+            <Route path="/actor/:id" element={ <Actor /> } />
             <Route path="*" element={"not found"} />
         </Routes>
       </GlobalSearchState.Provider>

@@ -3,6 +3,7 @@ import React from 'react';
 export const API_BASE_MOVIES_URL = "https://api.tvmaze.com/search/shows?q=";
 export const API_BASE_PEOPLE_URL = "https://api.tvmaze.com/search/people?q=";
 export const API_BASE_SHOW_QUERY_URL =  "https://api.tvmaze.com/shows/";
+export const API_BASE_PEOPLE_QUERY_URL =  "https://api.tvmaze.com/people/";
 
 export const GlobalSearchState = React.createContext(null);
 
