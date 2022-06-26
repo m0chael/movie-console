@@ -145,6 +145,10 @@ code {
   position: fixed;
   left:0;
   top:0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .main-subtitle {
   padding-left:20px;
@@ -161,13 +165,11 @@ code {
 }
 
 .radios {
-  margin-left:20px;
   margin-top:20px;
 }
 
 button {
   margin-top:20px;
-  margin-left:20px;
   padding:7px 30px 7px 30px;
   width:245px;
 }
