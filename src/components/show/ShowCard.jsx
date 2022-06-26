@@ -7,7 +7,7 @@ export default function ShowCard(props) {
     return (
         <Link className="show-links" to={`/show/${show.id}`}>
             <div className="show-card" key={show.id}>
-                {show.image ? <img src={show.image.medium} /> : <div className="image-not-found">No image found</div>}
+                {show.image ? <img src={show.image.medium} alt={show.name}/> : <div className="image-not-found">No image found</div>}
                 <h1>{show.name}</h1>
                 <p>{show.type}</p>
                 <p>Released: {show.premiered}</p>
