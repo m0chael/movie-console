@@ -1,9 +1,9 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const LINKS = [
-    {to: "/", text: "Home"},
-    {to: "/starred", text: "Go to Starred"}
+    { to: "/", text: "Home" },
+    { to: "/starred", text: "Go to Starred" }
 ];
 
 const Navs = () => {

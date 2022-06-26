@@ -1,15 +1,15 @@
 import React, { useEffect, useReducer } from 'react';
-import { useParams, Link} from "react-router-dom";
-import { api_get, API_BASE_PEOPLE_QUERY_URL} from '../misc/config';
+import { useParams, Link } from "react-router-dom";
+import { api_get, API_BASE_PEOPLE_QUERY_URL } from '../misc/config';
 
 const reducer = (previous_state, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case "FETCH_SUCCESS": {
-            return {...previous_state, is_loading:false, error: null, actor: action.actor}
+            return { ...previous_state, is_loading: false, error: null, actor: action.actor }
         };
-        
+
         case "FETCH_FAILED": {
-            return {...previous_state, is_loading:false, error: action.error, actor:null }
+            return { ...previous_state, is_loading: false, error: action.error, actor: null }
         };
 
         default: return previous_state;
@@ -28,11 +28,11 @@ const Actor = (props) => {
     const state = reducer_state[0];
     const dispatch = reducer_state[1];
 
-    useEffect( () => {
+    useEffect(() => {
         let is_mounted = true;
 
         get_this_actor_item(is_mounted);
-        
+
         return () => {
             console.log("exit use effect");
             is_mounted = false;
@@ -42,7 +42,7 @@ const Actor = (props) => {
     const get_this_actor_item = (is_mounted) => {
         let base_url_for_searching = API_BASE_PEOPLE_QUERY_URL;
         let url = `${base_url_for_searching}${params.id}`;
-        api_get(url).then((result)=>{
+        api_get(url).then((result) => {
             if (is_mounted) {
                 console.log(result);
                 console.log("Fetch success");
@@ -52,7 +52,7 @@ const Actor = (props) => {
         }).catch(err => {
             console.log(err);
             if (is_mounted) {
-                dispatch({type: "FETCH_FAILED", error: err });
+                dispatch({ type: "FETCH_FAILED", error: err });
             }
         });
     };
@@ -69,11 +69,11 @@ const Actor = (props) => {
                     state.actor ?
                         <div>
                             <div className="image-description-container">
-                                { state.actor.image ? <img src={state.actor.image.medium} /> : <div className="image-not-found">No image found</div>  }
+                                {state.actor.image ? <img src={state.actor.image.medium} /> : <div className="image-not-found">No image found</div>}
                                 <div className="show-right-container">
                                     <div className="show-title">
                                         <h1>{state.actor.name}</h1>
-                                        {state.actor.country? <div className="rating"><span>&#x2605;</span> {state.actor.country.name}</div> : ""}
+                                        {state.actor.country ? <div className="rating"><span>&#x2605;</span> {state.actor.country.name}</div> : ""}
                                     </div>
                                     <p>{state.actor.gender}</p>
                                     <p><a target="_blank" href={state.actor.url}>Read more...</a></p>
@@ -81,7 +81,7 @@ const Actor = (props) => {
                             </div>
 
                         </div>
-                    :
+                        :
                         ""
                 }
             </div>

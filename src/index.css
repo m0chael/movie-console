@@ -14,90 +14,101 @@ code {
 
 .show-links {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
-.show-links:hover{
+.show-links:hover {
   opacity: 0.9;
 }
 
 .go-home-links {
-  background-color:lightgray;
+  background-color: lightgray;
   text-decoration: none;
-  color:black;
+  color: black;
   border-radius: 30px;
-  padding:7px 50px 7px 50px;
-  display:inline-block;
-  margin-left:20px;
-  margin-top:20px;
+  padding: 7px 50px 7px 50px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
 }
+
 .image-not-found {
   background-color: lightgray;
   border-radius: 30px;
-  width:210;
-  height:235px;
-  padding:30px;
-  margin-bottom:5px;
+  width: 210;
+  height: 235px;
+  padding: 30px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.show-grid, .actor-grid {
+.show-grid,
+.actor-grid {
   display: flex;
   flex-wrap: wrap;
 }
 
-.show-card, .actor-card {
-  padding:10px;
+.show-card,
+.actor-card {
+  padding: 10px;
 }
-.show-grid img, .actor-grid img {
-  border:1px solid lightgray;
+
+.show-grid img,
+.actor-grid img {
+  border: 1px solid lightgray;
   border-radius: 30px;
 }
 
-.show-grid h1, .show-grid p, .actor-grid h1, .actor-grid p {
-  padding:0;
-  margin:0;
+.show-grid h1,
+.show-grid p,
+.actor-grid h1,
+.actor-grid p {
+  padding: 0;
+  margin: 0;
 }
 
-.show-grid h1, .actor-grid h1 {
-  font-size:1rem;
-  max-width:200px;
+.show-grid h1,
+.actor-grid h1 {
+  font-size: 1rem;
+  max-width: 200px;
   word-wrap: break-word;
 }
+
 .tags {
   list-style: none;
   display: flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding:0 0 10px 0;
-  margin:0;
-}
-.tags li {
-  border-radius: 30px;
-  margin-right:5px;
-  width:auto;
-  padding:5px 10px 5px 10px;
-  background-color:rgb(248, 238, 160);
+  padding: 0 0 10px 0;
+  margin: 0;
 }
 
-.image-description-container{
+.tags li {
+  border-radius: 30px;
+  margin-right: 5px;
+  width: auto;
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(248, 238, 160);
+}
+
+.image-description-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding:20px;
+  padding: 20px;
 }
 
 .image-description-container img {
   border-radius: 30px;
-  border:1px solid lightgray;
+  border: 1px solid lightgray;
 }
 
 .rating span {
-  color:rgb(246, 208, 55);
+  color: rgb(246, 208, 55);
 }
 
 .show-title {
@@ -108,26 +119,26 @@ code {
 }
 
 .show-title h1 {
-  padding:0 0 10px 0;
-  margin:0;
+  padding: 0 0 10px 0;
+  margin: 0;
 }
 
 .main-title {
   text-decoration: none;
-  color:white;
+  color: white;
   border-radius: 30px;
-  padding:0;
-  display:inline-block;
-  margin-left:20px;
+  padding: 0;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .show-right-container {
-  padding-left:20px;
+  padding-left: 20px;
 }
 
 .show-right-container p {
-  margin:0;
-  padding:0 0 10px 0;
+  margin: 0;
+  padding: 0 0 10px 0;
 }
 
 .main-page {
@@ -138,21 +149,22 @@ code {
 }
 
 .main-console {
-  background-color:rgb(173, 164, 234);
-  color:white;
-  min-height:100vh;
-  min-width:300px;
+  background-color: rgb(173, 164, 234);
+  color: white;
+  min-height: 100vh;
+  min-width: 300px;
   position: fixed;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
 }
+
 .main-subtitle {
-  padding-left:20px;
-  margin-top:0;
+  padding-left: 20px;
+  margin-top: 0;
 }
 
 .hide {
@@ -160,107 +172,129 @@ code {
 }
 
 .main-search {
-  padding-left:20px;
+  padding-left: 20px;
   text-align: left;
-  border:none;
+  border: none;
 }
 
 .radios {
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 button {
-  margin-top:20px;
-  padding-left:20px;
-  padding-right:20px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.no-results, .error-box {
-  margin-left:320px;
-  margin-top:20px;
+.no-results,
+.error-box {
+  margin-left: 320px;
+  margin-top: 20px;
 }
 
-.show-grid, .actor-grid{
-  margin-left:300px;
-  margin-top:20px;
+.show-grid,
+.actor-grid {
+  margin-left: 300px;
+  margin-top: 20px;
 }
 
 .main-console button {
-  border:none;
-  font-size:16px;
+  border: none;
+  font-size: 16px;
 }
 
 .main-console button:hover {
-  background-color:rgb(224, 224, 224);
+  background-color: rgb(224, 224, 224);
 }
 
-.main-console button, .main-search {
+.main-console button,
+.main-search {
   border-radius: 30px;
-  background-color:white;
+  background-color: white;
 }
 
-.main-console button, .main-search {
-  padding-top:15px;
-  padding-bottom:15px;
+.main-console button,
+.main-search {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media screen and (max-width:1000px) {
   .go-home-links {
-    padding-left:100px;
-    padding-right:100px;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
-  .show-grid, .actor-grid {
-    margin-left:0px;
+  .show-grid,
+  .actor-grid {
+    margin-left: 0px;
   }
-  .no-results, .error-box {
-    margin-left:20px;
+
+  .no-results,
+  .error-box {
+    margin-left: 20px;
   }
+
   .main-console {
     position: relative;
-    min-height:auto;
-    padding-bottom:40px;
-    width:100%;
-    display:flex;
+    min-height: auto;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  .show-grid, .actor-grid {
-    width:100%;
-    display:flex;
+
+  .show-grid,
+  .actor-grid {
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .main-page {
     flex-direction: column;
   }
-  .main-search, .main-title, .main-subtitle, .radios, .main-console button {
-    margin-left:0;
+
+  .main-search,
+  .main-title,
+  .main-subtitle,
+  .radios,
+  .main-console button {
+    margin-left: 0;
   }
+
   .main-subtitle {
-    padding-left:0;
+    padding-left: 0;
   }
+
   .show-links {
-    width:100%;
-    padding:10px;
+    width: 100%;
+    padding: 10px;
   }
-  .show-grid img, .actor-grid img {
-    width:100%;
+
+  .show-grid img,
+  .actor-grid img {
+    width: 100%;
   }
+
   .image-description-container img {
-    width:100%;
+    width: 100%;
   }
 }
 
-@media screen and (max-width:600px){ 
+@media screen and (max-width:600px) {
   .image-description-container {
     flex-direction: column;
   }
-  .show-right-container{
-    padding-left:0;
-    padding-top:20px;
+
+  .show-right-container {
+    padding-left: 0;
+    padding-top: 20px;
   }
 }

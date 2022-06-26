@@ -5,7 +5,7 @@ const Starred = () => {
 
     return (
         <MainPageLayout>
-           <div>This is starred</div>
+            <div>This is starred</div>
         </MainPageLayout>
     )
 };
