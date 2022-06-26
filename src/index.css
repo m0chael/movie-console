@@ -138,7 +138,7 @@ code {
 }
 
 .main-console {
-  background-color:rgb(90, 81, 158);
+  background-color:rgb(173, 164, 234);
   color:white;
   min-height:100vh;
   min-width:300px;
@@ -162,6 +162,7 @@ code {
 .main-search {
   padding-left:20px;
   text-align: left;
+  border:none;
 }
 
 .radios {
@@ -170,19 +171,27 @@ code {
 
 button {
   margin-top:20px;
-  padding:7px 30px 7px 30px;
-  width:245px;
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .no-results, .error-box {
   margin-left:320px;
   margin-top:20px;
-  font-weight: bold;
 }
 
 .show-grid, .actor-grid{
   margin-left:300px;
   margin-top:20px;
+}
+
+.main-console button {
+  border:none;
+  font-size:16px;
+}
+
+.main-console button:hover {
+  background-color:rgb(224, 224, 224);
 }
 
 .main-console button, .main-search {
